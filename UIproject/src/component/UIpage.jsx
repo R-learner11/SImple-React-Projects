@@ -10,7 +10,6 @@ function UiPage() {
         style={{
             backgroundImage: `url('https://img.freepik.com/free-vector/announcement-delicious-chocolate-with-almonds_52683-4298.jpg?w=740&t=st=1699336611~exp=1699337211~hmac=8a288da72af45c929c7cbda631518e81eeaa6e8b5c0176d5745c6bb839b9de31')`,
         }}>
-          <Navigation name='cocoa' />
 
           <div className='h-20 my-auto justify-left'>
             <p className='text-right text-4xl text-yellow-300 font-bold '>A Life</p>
