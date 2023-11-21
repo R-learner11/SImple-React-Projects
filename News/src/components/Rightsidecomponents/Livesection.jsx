@@ -23,7 +23,7 @@ function Livesection() {
                     {firstFourKeys.map((item)=>{
                         return(
                             <li
-                            className='px-1 py-4 font-semibold text-xs'
+                            className='px-1 py-3 font-semibold text-xs'
                              key={item}>
                                 <a href={newsInfo[item].url}>
                                     {newsInfo[item].title}

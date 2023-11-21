@@ -1,21 +1,18 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
 import jsonData from '../../data/editorspickdata.json'
+import { NavLink } from 'react-router-dom'
 
-
-function Editorspick() {
-
+function NewRetail() {
     const editorsPickData = jsonData['articles'].slice(0,3)
-
   return (
     <>
-    <div className='h-auto flex-col'>
+        <div className='h-auto flex-col'>
         <div className=''>
-            <div className='justify-between content-center mobile:gap-2 md:flex flex-col'>
-                <span className='font-bold text-base leading-5'>Editor's pick</span>
+            <div className='justify-between content-center mobile:gap-2 md:flex'>
+                <span className='font-bold text-base leading-5'>New Retail</span>
                 <li className='list-none'>
                     <NavLink
-                        to="/editorspick"
+                        to="/"
                         className={
                             `text-xs font-bold block py-2 pr-4 pl-3 duration-200 lg:p-0`
                         } 
@@ -45,4 +42,4 @@ function Editorspick() {
   )
 }
 
-export default Editorspick
+export default NewRetail

@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       screens:{
-        'mobile': { 'min':'440px'},
+        'mobile': { 'min':'360px'},
       }
     },
   },
