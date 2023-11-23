@@ -1,6 +1,7 @@
 import React from "react"
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
+import 'flowbite'
 
 function Navigation() {
   const [open, setIsOpen] = useState(false)
@@ -10,9 +11,6 @@ function Navigation() {
         onClick={() => {
           setIsOpen(!open)
         }}
-        data-drawer-target="logo-sidebar"
-        data-drawer-toggle="logo-sidebar"
-        aria-controls="logo-sidebar"
         type="button"
         className="inline-flex items-center p-2 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200  dark:focus:ring-gray-600"
       >
@@ -33,80 +31,80 @@ function Navigation() {
 
       <aside
         className={`${
-          open ? "left-0" : "-translate-x-full"
+          open ? "left-0" : "-translate-x-full left-[-100px]"
         } top-0 z-40 w-[100px] md:w-[160px] h-screen transition-transform  sm:translate-x-0 " tabIndex="-1" aria-label="Sidebar`}
       >
         <div className="flex justify-center h-screen text-gray-700">
-          <div className="flex flex-col pr-3">
+          <div className="flex flex-col">
             <ul className="text-xs font-medium">
               <NavLink to="/">
                 <li className="cursor-pointer px-3 py-2 rounded-sm hover:bg-gray-300 hover:border-r-[3px] hover:border-red-600">
                   Home
                 </li>
-              </NavLink>{" "}
+              </NavLink>
               <hr />
               <li
                 className="cursor-pointer px-3 py-2 rounded-sm hover:bg-gray-300 hover:border-r-[3px] hover:border-red-600"
                 href="#"
               >
-                News{" "}
-              </li>{" "}
+                News
+              </li>
               <hr />
               <li
                 className="cursor-pointer px-3 py-2 rounded-sm hover:bg-gray-300 hover:border-r-[3px] hover:border-red-600"
                 href="#"
               >
-                Business{" "}
-              </li>{" "}
+                Business
+              </li>
               <hr />
               <li
                 className="cursor-pointer px-3 py-2 rounded-sm hover:bg-gray-300 hover:border-r-[3px] hover:border-red-600"
                 href="#"
               >
-                Job{" "}
-              </li>{" "}
+                Job
+              </li>
               <hr />
               <li
                 className="cursor-pointer px-3 py-2 rounded-sm hover:bg-gray-300 hover:border-r-[3px] hover:border-red-600"
                 href="#"
               >
-                Services{" "}
-              </li>{" "}
+                Services
+              </li>
               <hr />
               <li
                 className="cursor-pointer px-3 py-2 rounded-sm hover:bg-gray-300 hover:border-r-[3px] hover:border-red-600"
                 href="#"
               >
-                Holiday{" "}
-              </li>{" "}
+                Holiday
+              </li>
               <hr />
               <li
                 className="cursor-pointer px-3 py-2 rounded-sm hover:bg-gray-300 hover:border-r-[3px] hover:border-red-600"
                 href="#"
               >
-                Hotel{" "}
-              </li>{" "}
+                Hotel
+              </li>
               <hr />
               <li
                 className="cursor-pointer px-3 py-2 rounded-sm hover:bg-gray-300 hover:border-r-[3px] hover:border-red-600"
                 href="#"
               >
-                Restaurant{" "}
-              </li>{" "}
+                Restaurant
+              </li>
               <hr />
               <li
                 className="cursor-pointer px-3 py-2 rounded-sm hover:bg-gray-300 hover:border-r-[3px] hover:border-red-600"
                 href="#"
               >
-                Politics{" "}
-              </li>{" "}
+                Politics
+              </li>
               <hr />
               <li
                 className="cursor-pointer px-3 py-2 rounded-sm hover:bg-gray-300 hover:border-r-[3px] hover:border-red-600"
                 href="#"
               >
-                Entertainment{" "}
-              </li>{" "}
+                Entertainment
+              </li>
               <hr />
             </ul>
           </div>

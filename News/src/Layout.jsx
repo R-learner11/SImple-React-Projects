@@ -16,15 +16,14 @@ function Layout() {
       <Newsheader header={header} />
 
       <div className="flex lg:mr-6">
-        <div>
+        <div className="flex-initial">
           <Navigation />
         </div>
 
-        <div className="w-full flex-col">
+        <div className="w-full flex-1">
           <div className="w-full left-0">
             <Countrynav />
           </div>
-
           <Outlet />
         </div>
       </div>

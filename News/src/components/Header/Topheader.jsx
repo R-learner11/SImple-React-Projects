@@ -4,13 +4,14 @@ import { NavLink } from "react-router-dom"
 
 function Topheader() {
   const [isOpen, setIsOpen] = useState(false)
+  const [showSearch, setShowSearch] = useState(false)
 
   return (
     <>
-      <header className="shadow sticky z-50 top-0">
+      <header className="shadow sticky w-full z-50 top-0">
         <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-            <div className="lg:w-[120px]">
+            <div className="mobile:w-[90px] ">
               <img
                 src="/images/image103.png"
                 alt="Logo"
@@ -40,11 +41,14 @@ function Topheader() {
               <div className="flex">
                 <input
                   size="6"
-                  className={`hidden sm:flex rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50`}
+                  className={`${showSearch?'':'hidden'} sm:flex rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50`}
                   type="text"
                   placeholder="Search"
                 />
                 <svg
+                onClick={() => {
+                  setShowSearch(!showSearch)
+                }}
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -74,91 +78,86 @@ function Topheader() {
             </div>
 
             <div
-              className={`${
-                isOpen ? " transition ease-in-out delay-150" : " hidden"
-              } lg:sticky justify-between items-center w-full lg:flex lg:w-auto lg:order-1`}
-            >
-              <ul className="sticky z-50 flex flex-col mt-4 font-medium text-xs lg:flex-row lg:space-x-4 lg:mt-0 mobile:gap-5 mobile:mx-3 mobile:min-h-fit w-fit">
-                <li className="   cursor-pointer hover:underline decoration-red-600 decoration-4">
-                  <NavLink
-                    to="/"
-                    className={`text-xs font-bold block py-2 pr-4 pl-3 duration-200 lg:p-0`}
-                  >
-                    Home
+                className={`${
+                  isOpen ? "z-50 bg-white transition ease-in-out delay-150" : " hidden"
+                } lg:sticky justify-between items-center w-full lg:flex lg:w-auto lg:order-1`}
+              >
+              
+                <ul className="sticky z-50 flex flex-col mt-4 font-medium text-xs lg:flex-row lg:mt-0 mobile:min-h-fit w-fit lg:divide-x-2 lg:divide-black">
+                  <NavLink to='/'>
+                  {({isActive}) =>(
+                    <li className={`${isActive ? "border-b-4" : ""} px-4 py-1 hover:border-b-4 border-red-500`}>
+                      Home
+                    </li> 
+                    )}
                   </NavLink>
-                </li>
-                <li className="  cursor-pointer hover:underline decoration-red-600 decoration-4">
-                  <NavLink
-                    to="/"
-                    className={`text-xs font-bold block py-2 pr-4 pl-3 duration-200 lg:p-0`}
-                  >
-                    World
+                  <NavLink to='/editorspick'>
+                  {({isActive}) =>(
+                    <li className={`${isActive ? "border-b-4" : "border-red-500"} px-4 py-1 hover:border-b-4 border-red-500`}>
+                      World
+                    </li> 
+                    )}
                   </NavLink>
-                </li>
-                <li className="  cursor-pointer hover:underline decoration-red-600 decoration-4">
-                  <NavLink
-                    to="/"
-                    className={`text-xs font-bold block py-2 pr-4 pl-3 duration-200 lg:p-0`}
-                  >
-                    Country
+                  <NavLink to='/country'>
+                  {({isActive}) =>(
+                    <li className={`${isActive ? "border-b-4" : "border-red-500"} px-4 py-1 hover:border-b-4 border-red-500`}>
+                      Country
+                    </li> 
+                    )}
                   </NavLink>
-                </li>
-                <li className="  cursor-pointer hover:underline decoration-red-600 decoration-4">
-                  <NavLink
-                    to="/"
-                    className={`text-xs font-bold block py-2 pr-4 pl-3 duration-200 lg:p-0`}
-                  >
-                    Language
+                
+                  <NavLink to='/language'>
+                  {({isActive}) =>(
+                    <li className={`${isActive ? "border-b-4" : "border-red-500"} px-4 py-1 hover:border-b-4 border-red-500`}>
+                      Language
+                    </li> 
+                    )}
                   </NavLink>
-                </li>
-                <li className="  cursor-pointer hover:underline decoration-red-600 decoration-4">
-                  <NavLink
-                    to="/"
-                    className={`text-xs font-bold block py-2 pr-4 pl-3 duration-200 lg:p-0`}
-                  >
-                    Favourite
+                  <NavLink to='/favourite'>
+                  {({isActive}) =>(
+                    <li className={`${isActive ? "border-b-4" : "border-red-500"} px-4 py-1 hover:border-b-4 border-red-500`}>
+                      Favourite
+                    </li> 
+                    )}
                   </NavLink>
-                </li>
-                <li className="  cursor-pointer hover:underline decoration-red-600 decoration-4">
-                  <NavLink
-                    to="/"
-                    className={`text-xs font-bold block py-2 pr-4 pl-3 duration-200 lg:p-0`}
-                  >
-                    Calendar
+                  <NavLink to='/calendar'>
+                  {({isActive}) =>(
+                    <li className={`${isActive ? "border-b-4" : "border-red-500"} px-4 py-1 hover:border-b-4 border-red-500`}>
+                      Calendar
+                    </li> 
+                    )}
                   </NavLink>
-                </li>
-                <li className="  cursor-pointer hover:underline decoration-red-600 decoration-4">
-                  <NavLink
-                    to="/"
-                    className={`text-xs font-bold block py-2 pr-4 pl-3 duration-200 lg:p-0`}
-                  >
-                    Private
+                  <NavLink to='/private'>
+                  {({isActive}) =>(
+                    <li className={`${isActive ? "border-b-4" : "border-red-500"} px-4 py-1 hover:border-b-4 border-red-500`}>
+                      Private
+                    </li> 
+                    )}
                   </NavLink>
-                </li>
-                <li className="flex cursor-pointer hover:underline decoration-red-600 decoration-4">
-                  <NavLink
-                    to="/"
-                    className={`text-xs font-bold block py-2 pr-4 pl-3 duration-200 lg:p-0`}
-                  >
+                  <NavLink to='/more'>
+                  {({isActive}) =>(
+                    <li className={`flex ${isActive ? "border-b-4" : "border-red-500"} px-4 py-1 hover:border-b-4 border-red-500`}>
                     More
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-5 h-5"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                      />
-                    </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-5 h-5"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </li>
+                  )}
                   </NavLink>
-                </li>
-              </ul>
-            </div>
+                </ul>
+              </div>
+            
           </div>
         </nav>
       </header>

@@ -14,7 +14,7 @@ function Home() {
                 <Midcontent />
             </div>
 
-            <div className='flex-initial flex-col w-[120px] lg:w-[213px] float-right lg:right-0 mobile:right-0'>
+            <div className='bg-white hidden sm:flex sm:flex-initial flex-col w-[120px] lg:w-[213px] float-right lg:right-0 mr-1 mobile:right-0'>
                 <Editorspick/>
                 <div className='hidden mobile:flex'>
                     <img src="./images/image101.png/" alt="sale picture"/>

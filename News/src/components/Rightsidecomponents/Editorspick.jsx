@@ -1,15 +1,15 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
+import {NavLink, useSearchParams} from 'react-router-dom'
 import jsonData from '../../data/editorspickdata.json'
 
 
 function Editorspick() {
-
+    
     const editorsPickData = jsonData['articles'].slice(0,3)
 
   return (
     <>
-    <div className='h-auto flex-col'>
+    <div className='right-0 flex-col'>
         <div className=''>
             <div className='justify-between content-center mobile:gap-2 md:flex flex-col'>
                 <span className='font-bold text-base leading-5'>Editor's pick</span>

@@ -3,9 +3,11 @@ import jsonData from "../../data/newsData.json"
 
 function Midcontent() {
   const newsData = jsonData["articles"]
+  const newsList = newsData.slice(1, 5)
+  const newsList2 =newsData.slice(5,10)
   return (
     <>
-      <div className="w-full mb-2">
+      <div className="w-full mb-2 ">
         <div className="grid md:grid-rows md:grid-flow-col md:gap-3 flex-col mt-2">
           <div className="row-span-2 col-span-2 md:order-1">
             <img
@@ -27,39 +29,30 @@ function Midcontent() {
 
       <div className="w-full mt-3">
         <div className="md:flex gap-3">
-          <div>
-            <img src="./images/Frame314.png" alt="" />
+          <div className="">
+            <img className="mx-auto" src="./images/Frame314.png" alt="" />
           </div>
-          <div className="grid justify-center sm:grid-rows-2 sm:grid-flow-col gap-2">
-            <div>
-              <img src="./images/frame315.png" alt="" />
-            </div>
-            <div>
-              <img src="./images/frame315.png" alt="" />
-            </div>
-            <div>
-              <img src="./images/frame315.png" alt="" />
-            </div>
-            <div>
-              <img src="./images/frame315.png" alt="" />
-            </div>
+          <div className="grid grid-cols-2 grid-rows-2 gap-2 md:flex-shrink">
+            {newsList.map((item) => {
+              return (
+                <div key={item.title}>
+                  <img className="mx-auto" src="./images/frame315.png" alt="" />
+                </div>
+              )
+            })}
           </div>
         </div>
 
         <div className="mt-3">
-          <div className="sm:grid hidden sm:grid-flow-col sm:grid-row-3 gap-2">
-            <div>
-              <img src="./images/frame315.png" alt="" />
-            </div>
-            <div>
-              <img src="./images/frame315.png" alt="" />
-            </div>
-            <div>
-              <img src="./images/frame315.png" alt="" />
-            </div>
-            <div>
-              <img src="./images/frame315.png" alt="" />
-            </div>
+          
+          <div className="grid lg:grid-cols-5 grid-cols-2 grid-rows-2 items-center gap-2">
+            {newsList2.map((item) => {
+              return (
+                <div key={item.title}>
+                  <img className='mx-auto' src="./images/frame315.png" alt="" />
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>
