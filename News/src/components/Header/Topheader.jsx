@@ -79,7 +79,7 @@ function Topheader() {
 
             <div
                 className={`${
-                  isOpen ? "z-50 bg-white transition ease-in-out delay-150" : " hidden"
+                  isOpen ? " z-50 bg-white transition ease-in-out delay-150" : " hidden"
                 } lg:sticky justify-between items-center w-full lg:flex lg:w-auto lg:order-1`}
               >
               

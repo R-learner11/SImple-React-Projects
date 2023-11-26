@@ -15,12 +15,13 @@ function Layout() {
       
       <Topheader />
       <Newsheader header={header} />
+      {/* <div className="  "> */}
+        <Navigation />
+        {/* </div> */}
       
 
-      <div className="flex lg:mr-6 mr-2 ">
-      <div className="  left-0">
-        <Navigation />
-        </div>
+      <div className="flex sm:ml-[100px] md:ml-[120px] lg:ml-[160px] lg:mr-6 mr-2 ">
+      
         
 
         <div className="w-full flex flex-col flex-1 ml-2">

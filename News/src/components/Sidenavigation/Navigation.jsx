@@ -7,7 +7,7 @@ function Navigation() {
   const [open, setIsOpen] = useState(false)
   return (
     <>
-    <div className={`flex-col  left-0 bg-white ${open?'bg-white top-14 fixed':''} sm:w-auto w-0`}>
+    <div className={`flex-col fixed left-0 bg-white ${open?'bg-white fixed':''} sm:w-auto w-0`}>
         <div className="">
         <button
           onClick={() => {
@@ -35,14 +35,14 @@ function Navigation() {
         
         <aside
           className={`${
-            open ? "left-0 bg-white mt-[32px]" : "-translate-x-full left-[-100px]"
-          } top-0 z-40 w-[100px] md:w-[120px] lg:w-[160px] h-screen transition-transform  sm:translate-x-0 " tabIndex="-1" aria-label="Sidebar`}
+            open ? "left-0 bg-white mt-[42px]" : "-translate-x-full left-[-100px]"
+          } top-0 z-40 w-[100px] md:w-[120px] lg:w-[160px] h-fit transition-transform  sm:translate-x-0 " tabIndex="-1" aria-label="Sidebar`}
         >
           
-          <div className="flex justify-center h-screen text-gray-700 ">
+          <div className="flex justify-center md:h-fit text-gray-700 ">
             <div className="flex flex-col">
             
-              <ul className="text-xs font-medium">
+              <ul className="text-xs font-medium ">
                 <NavLink to="/">
                   <li className="cursor-pointer px-3 py-2 rounded-sm hover:bg-gray-300 hover:border-r-[3px] hover:border-red-600">
                     Home
