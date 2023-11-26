@@ -1,9 +1,10 @@
 import React from "react"
 import jsonData from "../../data/editorspickdata.json"
 import { NavLink } from "react-router-dom"
+import { v4 as uuidv4 } from 'uuid';
 
 function Popularretail() {
-  const editorsPickData = jsonData["articles"].slice(0, 3)
+  const editorsPickData = jsonData.slice(0, 3)
   return (
     <>
       <div className="h-auto flex-col">
@@ -28,7 +29,7 @@ function Popularretail() {
                 return (
                   <li
                     className="px-1 py-3 font-semibold text-xs"
-                    key={item.title}
+                    key={uuidv4()}
                   >
                     {item.title}
                   </li>

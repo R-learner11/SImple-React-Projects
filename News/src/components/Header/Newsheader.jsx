@@ -5,7 +5,7 @@ function Newsheader({ header }) {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <>
-      <div className="sticky w-full bg-[#222222] ">
+      <div className=" w-full bg-[#222222] ">
         <div className="pl-3 sm:pl-[20px] lg:pl-[20px] pt-[10px] pb-[8px]">
           <div className="font-bold text-[32px] leading-9 flex justify-between mr-4">
             <p className="text-white">News: {header}</p>
@@ -53,51 +53,51 @@ function Newsheader({ header }) {
               isOpen ? "h-full w-full pl-2 z-[1] top-0 left-0 transition-transform duration-150 overflow-y-auto" : "hidden"
             } text-white lg:flex mt-2 lg:sticky items-center w-full font-extralight text-[14px] lg:w-auto lg:order-1`}
           >
-            <ul className="flex flex-col lg:flex-row justify-between mobile:min-h-fit mobile:space-y-2 xl:space-x-6 w-fit" >
-              <li className="lg:border-r-[1px] lg:pr-2 lg:pl-0 px-2 mt-2 border-white hover:border-b-[3px] cursor-pointer  ">
+            <ul className="flex flex-col lg:flex-row mobile:min-h-fit mobile:space-y-2 lg:divide-x-2 lg:divide-white w-fit" >
+              <li className="lg:border-r-[1px] lg:pr-2 lg:pl-0 px-2 mt-2 xl:pr-4 border-white hover:border-b-[3px] cursor-pointer">
                 Home
               </li>
-              <li className="lg:border-r-[1px] px-2 border-white hover:border-b-[3px] cursor-pointer ">
+              <li className="lg:border-r-[1px] px-2  xl:px-4 border-white hover:border-b-[3px] cursor-pointer ">
                 Politics
               </li>
-              <li className="lg:border-r-[1px] px-2 border-white hover:border-b-[3px] cursor-pointer ">
+              <li className="lg:border-r-[1px] px-2 xl:px-4 border-white hover:border-b-[3px] cursor-pointer ">
                 business
               </li>
-              <li className="lg:border-r-[1px] px-2 border-white hover:border-b-[3px] cursor-pointer ">
+              <li className="lg:border-r-[1px] px-2 xl:px-4 border-white hover:border-b-[3px] cursor-pointer ">
                 Technology
               </li>
-              <li className="lg:border-r-[1px] px-2 border-white hover:border-b-[3px] cursor-pointer ">
+              <li className="lg:border-r-[1px] px-2 xl:px-4 border-white hover:border-b-[3px] cursor-pointer ">
                 Science
               </li>
-              <li className="hover:border-b-[3px] cursor-pointer lg:border-r-[1px] px-2 border-white ">
+              <li className="hover:border-b-[3px] xl:px-4 cursor-pointer lg:border-r-[1px] px-2 border-white ">
                 Health
               </li>
-              <li className="hover:border-b-[3px] cursor-pointer lg:border-r-[1px] px-2 border-white ">
+              <li className="hover:border-b-[3px] xl:px-4 cursor-pointer lg:border-r-[1px] px-2 border-white ">
                 Arts
               </li>
 
-              <li className="lg:border-r-[1px] px-2 border-white hover:border-b-[3px] cursor-pointer ">
+              <li className="lg:border-r-[1px] px-2 xl:px-4 border-white hover:border-b-[3px] cursor-pointer ">
                 Tourism
               </li>
-              <li className="lg:border-r-[1px] px-2 border-white hover:border-b-[3px] cursor-pointer ">
+              <li className="lg:border-r-[1px] px-2 xl:px-4 border-white hover:border-b-[3px] cursor-pointer ">
                 Education
               </li>
-              <li className="lg:border-r-[1px] px-2 border-white hover:border-b-[3px] cursor-pointer ">
+              <li className="lg:border-r-[1px] px-2 xl:px-4 border-white hover:border-b-[3px] cursor-pointer ">
                 Families
               </li>
-              <li className="lg:border-r-[1px] px-2 border-white hover:border-b-[3px] cursor-pointer ">
+              <li className="lg:border-r-[1px] px-2 xl:px-4 border-white hover:border-b-[3px] cursor-pointer ">
                 Social
               </li>
-              <li className="lg:border-r-[1px] px-2 border-white hover:border-b-[3px] cursor-pointer ">
+              <li className="lg:border-r-[1px] px-2 xl:px-4 border-white hover:border-b-[3px] cursor-pointer ">
                 Entertainment
               </li>
-              <li className="lg:border-r-[1px] px-2 border-white hover:border-b-[3px] cursor-pointer ">
+              <li className="lg:border-r-[1px] px-2 xl:px-4 border-white hover:border-b-[3px] cursor-pointer ">
                 Weather
               </li>
-              <li className="lg:border-r-[1px] px-2 border-white hover:border-b-[3px] cursor-pointer ">
+              <li className="lg:border-r-[1px] px-2 xl:px-4 border-white hover:border-b-[3px] cursor-pointer ">
                 Magazine
               </li>
-              <li className="lg:border-r-[1px] px-2 border-white hover:border-b-[3px] cursor-pointer ">
+              <li className="lg:border-r-[1px] px-2 xl:px-4 border-white hover:border-b-[3px] cursor-pointer ">
                 stories
               </li>
               <li className=" flex hover:border-b-[3px] lg:pl-2 lg:pr-0 px-2 cursor-pointer ">

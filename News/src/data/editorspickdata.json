@@ -1,5 +1,4 @@
-{
-  "articles": [
+ [
     {
       "source": {
         "id": "business-insider",
@@ -28,146 +27,55 @@
     },
     {
       "source": {
-        "id": null,
-        "name": "Marcellerusu.com"
+        "id": "business-insider",
+        "name": "Business Insider"
       },
-      "author": null,
-      "title": "Using Prolog as the AST",
-      "description": "Comments",
-      "url": "https://marcellerusu.com/using_prolog_as_the_ast.html",
-      "urlToImage": null,
-      "publishedAt": "2023-10-19T12:00:52Z",
-      "content": "Ive been toying with emitting Prolog from Coil and its been\r\na ton of fun!\r\nHeres the basic idea:\r\n// coil codelet ten =10// existing coil ast[ {type:\"let\",assign_expr: { type:\"id_assign\",name:\"ten\" … [+2366 chars]"
+      "author": "Erin Greenawald",
+      "title": "How 2 successful small-business owners use YouTube for cheap, sustainable, SEO-driven marketing",
+      "description": "Here's how you can use YouTube SEO for your small business. Simple YouTube videos can boost website traffic and sales when they're compelling.",
+      "url": "https://www.businessinsider.com/how-to-use-youtube-seo-for-small-business-traffic-2023-10",
+      "urlToImage": "https://i.insider.com/65393b5296f7540cd0655266?width=1200&format=jpeg",
+      "publishedAt": "2023-10-27T19:07:14Z",
+      "content": "Dielle Charon, a sales coach.Kaylee LaMoine\r\n<ul>\n<li>Starting a YouTube channel can be a heavy lift but can have big marketing benefits.</li>\n<li>To get the most out of it, optimize it for customer … [+6351 chars]"
     },
     {
       "source": {
-        "id": null,
-        "name": "Erikarow.land"
+        "id": "business-insider",
+        "name": "Business Insider"
       },
-      "author": null,
-      "title": "Things I like about Gleam's Syntax",
-      "description": "Comments",
-      "url": "https://erikarow.land/notes/gleam-syntax",
-      "urlToImage": null,
-      "publishedAt": "2023-10-26T20:32:35Z",
-      "content": "Gleam is a Type-Safe programming language that transpiles to Erlang\r\nAnd javascript., so you can run its code on the BEAM. I’ve slept on Gleam for a while because its syntax. It was too much Rust and… [+5838 chars]"
+      "author": "Lakshmi Varanasi",
+      "title": "Elon Musk says AI means eventually no one will need to work",
+      "description": "In a conversation with UK prime minister Rishi Sunak, Elon Musk said that AI will lead to world where there will be no need for jobs.",
+      "url": "https://www.businessinsider.com/elon-musk-predicts-ai-will-lead-to-future-no-jobs-2023-11",
+      "urlToImage": "https://i.insider.com/654438ee3cc84b4dfafb7901?width=1200&format=jpeg",
+      "publishedAt": "2023-11-03T01:17:09Z",
+      "content": "Rishi Sunak and Elon Musk talked about risks and benefits at the close of the UK's AI Safety Summit on Thursday.WPA Pool\r\n<ul><li>UK Prime Minister Rishi Sunak and Elon Musk chatted about AI at the c… [+1955 chars]"
     },
     {
       "source": {
-        "id": null,
-        "name": "Acko.net"
+        "id": "business-insider",
+        "name": "Business Insider"
       },
-      "author": "Steven Wittens",
-      "title": "Hello World on the GPU (2019)",
-      "description": "An easy tutorial for beginners in Rust.",
-      "url": "https://acko.net/blog/hello-world-on-the-gpu/",
-      "urlToImage": "https://acko.net/files/hello-gpu/cover.jpg",
-      "publishedAt": "2023-11-15T11:47:00Z",
-      "content": "Now we just need to encode the call, using a call encoder:\r\nlet encoder = console.create_call_encoder();\r\nWe begin by describing the special first argument (line), a combo of next_line and the emoji_… [+2548 chars]"
+      "author": "Erin Greenawald",
+      "title": "How 2 successful small-business owners use YouTube for cheap, sustainable, SEO-driven marketing",
+      "description": "Here's how you can use YouTube SEO for your small business. Simple YouTube videos can boost website traffic and sales when they're compelling.",
+      "url": "https://www.businessinsider.com/how-to-use-youtube-seo-for-small-business-traffic-2023-10",
+      "urlToImage": "https://i.insider.com/65393b5296f7540cd0655266?width=1200&format=jpeg",
+      "publishedAt": "2023-10-27T19:07:14Z",
+      "content": "Dielle Charon, a sales coach.Kaylee LaMoine\r\n<ul>\n<li>Starting a YouTube channel can be a heavy lift but can have big marketing benefits.</li>\n<li>To get the most out of it, optimize it for customer … [+6351 chars]"
     },
     {
       "source": {
-        "id": null,
-        "name": "Android Central"
+        "id": "business-insider",
+        "name": "Business Insider"
       },
-      "author": "tips@androidcentral.com (Nickolas Diaz)",
-      "title": "Google Search's new tool for verifying an image’s origin and context goes global",
-      "description": "Google wants to help you spot fake photos online, so it's rolling out its fact-checking tool to its search engine globally.",
-      "url": "https://www.androidcentral.com/apps-software/google-about-this-image-rollout",
-      "urlToImage": "https://cdn.mos.cms.futurecdn.net/WMab7m8CVng8rUHffk5bgR-1200-80.jpg",
-      "publishedAt": "2023-10-27T12:46:25Z",
-      "content": "<ul><li>Google is rolling out \"About this image\" for English-language users around the world looking to dig into the facts about images they find online.</li><li>This will deliver information on a ph… [+3039 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Android Central"
-      },
-      "author": "tips@androidcentral.com (Nickolas Diaz)",
-      "title": "Google Play Games Beta on PC picks up controller support in latest update",
-      "description": "Google's October update for its Play Games Beta on PC includes controller support and more following user requests.",
-      "url": "https://www.androidcentral.com/apps-software/google-play-games-beta-pc-october-2023-update",
-      "urlToImage": "https://cdn.mos.cms.futurecdn.net/u6u2qe5V2qvLkQ7StSHMRF-1200-80.jpeg",
-      "publishedAt": "2023-10-23T19:56:27Z",
-      "content": "<ul><li>Google's October update for its Play Games on PC beta finally lets users play with a controller on supported titles.</li><li>The update also brings 4K resolution support for monitors and a be… [+2656 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Android Central"
-      },
-      "author": "tips@androidcentral.com (Nickolas Diaz)",
-      "title": "Google's Bard opens its door to teens seeking inspiration or math help",
-      "description": "Google has opened its doors to teenagers interested in using its AI chatbot, Bard.",
-      "url": "https://www.androidcentral.com/apps-software/google-bard-opens-doors-to-teens",
-      "urlToImage": "https://cdn.mos.cms.futurecdn.net/tcT6EreSjZu5N7x25bEZBD-1200-80.jpg",
-      "publishedAt": "2023-11-16T21:00:10Z",
-      "content": "<ul><li>Google is opening Bard access to teenage accounts aged 13 and older.</li><li>Teens can ask Bard for inspiration covering a range of topics while also getting a bit of help with math equations… [+2659 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Search Engine Journal"
-      },
-      "author": "Brian Gareth",
-      "title": "How To Find The Best SEO Keywords That Win The Customer Over (& Why It’s Important) via @sejournal, @Brian_W_Gareth",
-      "description": "Craft the perfect SEO strategy with expert keyword research tips. Learn how to get more customers, boost search rankings & more.\nThe post How To Find The Best SEO Keywords That Win The Customer Over (& Why It’s Important) appeared first on Search Engine Journ…",
-      "url": "https://www.searchenginejournal.com/find-best-seo-keywords-webceo-spcs/499701/",
-      "urlToImage": "https://www.searchenginejournal.com/wp-content/uploads/2023/10/featured-image-65427319ac24d-sej.jpg",
-      "publishedAt": "2023-11-14T06:00:18Z",
-      "content": "Step 1. Fully Understand The User’s Search Intent\r\nIt’s easy to just take whatever keywords you like from a keyword research tool and put them onto your site. But if you suspect that that strategy is… [+10501 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Search Engine Journal"
-      },
-      "author": "Kristi Hines",
-      "title": "How Local Businesses Can Rank For Popular Near Me Searches via @sejournal, @kristileilani",
-      "description": "How can local businesses optimize for popular local search terms? One business did it with a creative name - here are some more practical ways.\nThe post How Local Businesses Can Rank For Popular Near Me Searches appeared first on Search Engine Journal.",
-      "url": "https://www.searchenginejournal.com/how-local-businesses-can-rank-for-popular-near-me-searches/499816/",
-      "urlToImage": "https://www.searchenginejournal.com/wp-content/uploads/2023/10/creative-ways-to-rank-for-restaurant-near-me-654199393de7f-sej.jpg",
-      "publishedAt": "2023-11-01T00:33:05Z",
-      "content": "A recent feature on The Verge highlighted businesses that try to get an edge in local search rankings with clever names like Thai Food Near Me.\r\nSo, I set out to discover if this strategy could impac… [+4465 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Internetisbeautiful.com"
-      },
-      "author": null,
-      "title": "Show HN: I am curating the best websites on the internet",
-      "description": "Discover the most interesting, useful and awesome websites from the depths of the internet.",
-      "url": "https://www.internetisbeautiful.com",
-      "urlToImage": "https://assets-global.website-files.com/6056008d5923ad6bef376243/63d2782a1e13ca641d89146d_Screenshot%202023-01-26%20at%2012.54.53.png",
-      "publishedAt": "2023-10-26T16:20:10Z",
-      "content": "Trends everywhere is a browser extension that makes it easy to visualise and track the popularity of any keyword or trend.\r\nThis website will help you create the perfect color palette and browse for … [+1173 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Search Engine Journal"
-      },
-      "author": "Roger Montti",
-      "title": "SERP Volatility: What Do You Do About It? via @sejournal, @martinibuster",
-      "description": "This is what SERP volatility is and how to keep it from disrupting your rankings.\nThe post SERP Volatility: What Do You Do About It? appeared first on Search Engine Journal.",
-      "url": "https://www.searchenginejournal.com/serp-volatility/497287/",
-      "urlToImage": "https://www.searchenginejournal.com/wp-content/uploads/2023/09/shutterstock_2301145461-65149db0653fe-sej.jpg",
-      "publishedAt": "2023-10-23T09:00:13Z",
-      "content": "Search results generally appear to be stable, but the reality is that Google’s SERPs can be more dynamic and volatile than is commonly understood.\r\nIn this article, you will learn the reasons for vol… [+7490 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Codeberg.org"
-      },
-      "author": "gsou",
-      "title": "An implementation of Common Lisp targeting Lua",
-      "description": "Lua Common Lisp. An implementation of Common Lisp targeting Lua.",
-      "url": "https://codeberg.org/gsou/LCL",
-      "urlToImage": "https://codeberg.org/avatars/947df15c5dc08e5fdd36d184ad0015c5",
-      "publishedAt": "2023-11-09T12:54:39Z",
-      "content": "After loading lcl.lua, the Lua VM is ready to run Common Lisp code. To do that, the lisp functions can be directly called by Lua or by the host application by following the calling convention.\r\nNote … [+2910 chars]"
-    }   
+      "author": "Lakshmi Varanasi",
+      "title": "Elon Musk says AI means eventually no one will need to work",
+      "description": "In a conversation with UK prime minister Rishi Sunak, Elon Musk said that AI will lead to world where there will be no need for jobs.",
+      "url": "https://www.businessinsider.com/elon-musk-predicts-ai-will-lead-to-future-no-jobs-2023-11",
+      "urlToImage": "https://i.insider.com/654438ee3cc84b4dfafb7901?width=1200&format=jpeg",
+      "publishedAt": "2023-11-03T01:17:09Z",
+      "content": "Rishi Sunak and Elon Musk talked about risks and benefits at the close of the UK's AI Safety Summit on Thursday.WPA Pool\r\n<ul><li>UK Prime Minister Rishi Sunak and Elon Musk chatted about AI at the c… [+1955 chars]"
+    }
   ]
-}
+    

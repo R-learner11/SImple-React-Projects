@@ -8,14 +8,51 @@ function Countrynav() {
   const [showSearch, setShowSearch] = useState(false)
   return (
     <>
-      <div className=" w-full h-77px ">
+      <div className=" sm:w-full w-[90%] float-right bg-white h-77px">
         <div className="sm:flex justify-between text-xs font-normal">
-          <div className="flex gap-3 sm:gap-2 justify-between mr-3 sm:order-1">
+          <div className="flex gap-2 sm:gap-2 sm:justify-between mr-3 sm:order-1">
+            
+
+            <input
+              size="6"
+              className={`${showSearch?'':'hidden'} sm:flex mt-1 rounded-md border border-black/30 bg-transparent px-2 py-1 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50`}
+              type="text"
+              placeholder="Local News"
+            />
+            <button>
+              <svg
+               onClick={() => {
+                setShowSearch(!showSearch)
+              }}
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6 mt-[10px] "
+                
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </button>
+
+            <button>
+              <img
+                src="/images/location.png"
+                alt="location"
+                className="w-5 h-5 mt-[10px]"
+              />
+            </button>
+
             <div>
               <button
                 id="dropdownDefaultButton"
                 data-dropdown-toggle="dropdown"
-                className=" focus:ring-2 px-3 rounded-lg inline-flex items-center "
+                className=" focus:ring-2 px-3 rounded-lg inline-flex items-center"
               >
                 <svg
                   onClick={() => {
@@ -65,58 +102,7 @@ function Countrynav() {
               </div>
             </div>
 
-            <input
-              size="6"
-              className={`${showSearch?'':'hidden'} sm:flex mt-1 rounded-md border border-black/30 bg-transparent px-2 py-1 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50`}
-              type="text"
-              placeholder="Local News"
-            />
-            <button>
-              <svg
-               onClick={() => {
-                setShowSearch(!showSearch)
-              }}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6 mt-[10px] "
-                
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                />
-              </svg>
-            </button>
-
-            <button>
-              <img
-                src="/images/location.png"
-                alt="location"
-                className="w-5 h-5 mt-[10px]"
-              />
-            </button>
-
-            <div className="sm:hidden text-center my-auto">
-              <NavLink
-                to="/editorspick"
-                className={`text-xs font-bold block`}
-              >
-                Editor's Pick
-              </NavLink>
-            </div>
-
-            <div className="sm:hidden text-center my-auto">
-              <NavLink
-                to="/editorspick"
-                className={`text-xs font-bold block `}
-              >
-                Live News
-              </NavLink>
-            </div>
+            
           </div>
 
           <div

@@ -12,19 +12,24 @@ function Layout() {
 
   return (
     <>
+      
       <Topheader />
       <Newsheader header={header} />
+      
 
-      <div className="flex lg:mr-6">
-        <div className="flex-initial">
-          <Navigation />
+      <div className="flex lg:mr-6 mr-2 ">
+      <div className="  left-0">
+        <Navigation />
         </div>
+        
 
-        <div className="w-full flex-1">
+        <div className="w-full flex flex-col flex-1 ml-2">
           <div className="w-full left-0">
             <Countrynav />
           </div>
+
           <Outlet />
+
         </div>
       </div>
 
